@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Project 3: Rock Paper Scissors</title>
+        <link rel="stylesheet" href="rps-style.css">
+    </head>
+    <body>
+        <div class="heading">
+            <!-- <img class="heading-img"> -->
+            <h1>Hewwo!~ ^U^</h1>
+            <h1>Play rock, paper, scissors with me!!!</h1>
+        </div>
+
+        <!-- <div class="playButton">
+            <button id="playButton" onClick="playRound();">TEST PLAY WITH ME</button>
+        </div> -->
+
+        <!--COMPUTER SELECTION-->
+        <div class="compBoard_img">
+            <img id="compImg" src="images/kirby-sleep.gif" name="compImg">
+        </div>
+
+        <!--COMPUTER SCOREBOARD-->
+        <div class="compBoard_message">
+            <div class="compBoard">
+                <p id="compS_choice">Computer has selected:&nbsp;</p>
+                <p id="compChoice"></p>
+            </div>
+            <div class="compBoard_score">
+                <p id="compS_score">Computer's Score:&#160;</p>
+                <p id="compScore"></p>
+            </div>
+        </div>
+
+        <!--MESSAGE BOX-->
+        <div class="messageBox">
+            <p id="round"></p>
+            <p id="message"></p>
+        </div>
+
+        <!--HUMAN SCOREBOARD-->
+        <div class="userBoard_message">
+            <div class="userBoard">
+                <p id="userS_choice">You selected:&nbsp;</p>
+                <p id="userChoice"></p>
+            </div>
+            <div class="userBoard_score">
+                <p class="userS_score">Your score:&#160;</p>
+                <p id="userScore"></p>
+            </div>
+        </div>
+
+        <!--USER SELECTION-->
+        <div class="userSelection">
+            <p class="genMessages"></p>
+            <h2>Select any of the 3 options below to play a round:</h2>
+            <div class="selectBoxes">
+                <div class="rock" data-value="rock">
+                    <img class="box-img" id="u-rock-img" alt="rock-img" src="images/rock.png">
+                    <p class="box-name" id="u-rock">Rock</p>
+                </div>
+                <div class="paper" data-value="paper">
+                    <img class="box-img" id="u-paper-img" alt="paper-img" src="images/paper-bag.png">
+                    <p class="box-name" id="u-paper">Paper</p>
+                </div>
+                <div class="scissors" data-value="scissors">
+                    <img class="box-img" id="u-scissors-img" alt="scissors-img" src="images/scissors.png">
+                    <p class="box-name" id="u-scissors">Scissors</p>
+                </div>
+            </div>
+        </div>
+
+        <!--JS SCRIPT-->
+        <script src="rps-script.js"></script>
+    </body>
+</html>
